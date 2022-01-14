@@ -6,6 +6,56 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  let pronoun = ["Un", "El"];
+  let subject = [
+    "abuelo",
+    "perro",
+    "imbécil",
+    "policía",
+    "profesor",
+    "usurero",
+    "presidente del Real Madrid"
+  ];
+  let action = [
+    "se comió",
+    "orinó",
+    "defecó",
+    "rompió",
+    "volatilizó",
+    "escupió",
+    "robó"
+  ];
+  let possetion = [
+    "mi portátil",
+    "el coche de mi madre",
+    "mis ganas de vivir",
+    "una pizza de jamón y piña",
+    "los ahorros de toda mi vida"
+  ];
+  let where = [
+    "en la calle",
+    "en la puerta de un after",
+    "en una comisaría",
+    "en una pasarela de moda",
+    "en la presentación de Dani Alves",
+    "en un bootcamp de programación para programar programas que programen programadores",
+    "en la casa de Joaquín Sabina"
+  ];
+
+  let pronounIndex = Math.floor(Math.random() * pronoun.length);
+  let subjectIndex = Math.floor(Math.random() * subject.length);
+  let actionIndex = Math.floor(Math.random() * action.length);
+  let possetionIndex = Math.floor(Math.random() * possetion.length);
+  let whereIndex = Math.floor(Math.random() * where.length);
+
+  document.querySelector("#theexcuse").innerHTML =
+    pronoun[pronounIndex] +
+    " " +
+    subject[subjectIndex] +
+    " " +
+    action[actionIndex] +
+    " " +
+    possetion[possetionIndex] +
+    " " +
+    where[whereIndex];
 };
