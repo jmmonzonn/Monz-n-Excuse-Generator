@@ -6,15 +6,16 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  let pronoun = ["Un", "El"];
+  let pronoun = ["Un", "Algún"];
   let subject = [
     "abuelo",
     "perro",
-    "imbécil",
+    "tarado",
     "policía",
     "profesor",
-    "usurero",
-    "presidente del Real Madrid"
+    "banquero",
+    "presidente del Real Madrid",
+    "Pedro Sánchez salvaje"
   ];
   let action = [
     "se comió",
